@@ -4,6 +4,7 @@ import org.springframework.stereotype.Service;
 
 import java.net.Inet4Address;
 import java.net.UnknownHostException;
+import java.time.LocalDateTime;
 
 
 @Service
@@ -18,6 +19,12 @@ public class JsonService {
         } catch (UnknownHostException e) {
            return ("Something went wrong");
         }
+    }
+
+   String Tdate;
+    public String getdate() {
+        this.Tdate = String.valueOf(LocalDateTime.now());
+        return "Date is " + Tdate;
     }
 
 

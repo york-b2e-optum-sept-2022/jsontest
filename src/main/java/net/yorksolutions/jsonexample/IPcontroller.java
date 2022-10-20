@@ -3,7 +3,7 @@ package net.yorksolutions.jsonexample;
 
 import org.springframework.web.bind.annotation.*;
 
-
+import java.util.Map;
 
 
 @RestController
@@ -20,9 +20,9 @@ public class IPcontroller {
         return this.jsonService.getIp();
     }
 
-    @GetMapping("/ip")
+    @GetMapping("/date")
     public String genHeader() {
-        return this.jsonService.getIp();
+        return this.jsonService.getdate();
     }
 
 }
